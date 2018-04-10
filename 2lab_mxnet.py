@@ -85,7 +85,7 @@ out = mx.sym.softmax(net0(data=data),axis=1)
 
 w=mx.viz.plot_network(out)
 w.view('lab2')
-1/0
+
 net = mx.gluon.SymbolBlock(outputs=out, inputs=data)
 
 ctx = mx.gpu(0)
